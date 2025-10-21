@@ -8,7 +8,7 @@
 * Git
 
 # Версия Go
-<img width="277" height="47" alt="image" src="https://github.com/user-attachments/assets/884936a9-b6aa-4b53-9b9c-88b324b9685d" />
+<img width="340" height="55" alt="image" src="https://github.com/user-attachments/assets/e7fec853-899d-442e-9d95-94d494a5cb46" />
 
 # Сборка
 Для сборки проекта необходимо выполнить команду из директории pz3-http:
