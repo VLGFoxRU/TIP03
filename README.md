@@ -11,27 +11,38 @@
 <img width="277" height="47" alt="image" src="https://github.com/user-attachments/assets/884936a9-b6aa-4b53-9b9c-88b324b9685d" />
 
 # Сборка
-Для сборки проекта необходимо выполнить команду из директории myapp:
+Для сборки проекта необходимо выполнить команду из директории pz3-http:
 ```
-go build -o executableFileName.exe ./cmd/myapp/main.go
+go build -o .\bin\server.exe  .\cmd\server
 ```
 # Запуск
-Для запуска без компиляции выполняется команда из директории myapp:
+Для запуска без компиляции выполняется команда из директории pz3-http:
 ```
-go run ./cmd/myapp
+go run ./cmd/server
 ```
-<img width="695" height="197" alt="image" src="https://github.com/user-attachments/assets/badbe418-c798-4f26-b327-0792ea8e60d0" />
+<img width="446" height="66" alt="image" src="https://github.com/user-attachments/assets/889dd8a4-721e-4e4f-8b87-2ad47bdf9073" />
 
 # Проверка работоспоcобности
-Для проверки работоспособности необходимо обратиться к разворачиваему API с помощью:
-```
-curl -i http://localhost:8080/ping
-```
-При обращению результат должен быть такой:
+Запрос GET /health
+<img width="388" height="130" alt="image" src="https://github.com/user-attachments/assets/81a6d5e4-1372-4f6e-a7fa-5ca38ddfae62" />
 
-<img width="639" height="186" alt="image" src="https://github.com/user-attachments/assets/a33e8b1f-8f1c-4302-8c87-05728b5d1ffc" />
+Запрос GET /tasks
+<img width="397" height="176" alt="image" src="https://github.com/user-attachments/assets/53a741ad-c385-4f82-a65c-8a4115088c79" />
+
+Запрос POST /tasks
+<img width="372" height="151" alt="image" src="https://github.com/user-attachments/assets/e51f95a6-dc2f-4077-bc7e-40bbd85da4f0" />
+
+Запрос GET /tasks/{id}
+<img width="390" height="171" alt="image" src="https://github.com/user-attachments/assets/7f495062-5c33-4f44-8fc2-89c726697d01" />
 
 # Структура проекта
 Дерево структуры проекта: 
-
-<img width="262" height="257" alt="image" src="https://github.com/user-attachments/assets/ea1ba31e-9685-4f3b-b625-8c96d3f299ec" />
+```
+D:
+├───bin
+├───cmd
+│   └───server
+└───internal
+    ├───api
+    └───storage
+```
