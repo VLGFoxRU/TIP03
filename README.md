@@ -24,16 +24,22 @@ go run ./cmd/server
 
 # Проверка работоспоcобности
 Запрос GET /health
+
 <img width="388" height="130" alt="image" src="https://github.com/user-attachments/assets/81a6d5e4-1372-4f6e-a7fa-5ca38ddfae62" />
 
 Запрос GET /tasks
+
 <img width="397" height="176" alt="image" src="https://github.com/user-attachments/assets/53a741ad-c385-4f82-a65c-8a4115088c79" />
 
 Запрос POST /tasks
+
 <img width="372" height="151" alt="image" src="https://github.com/user-attachments/assets/e51f95a6-dc2f-4077-bc7e-40bbd85da4f0" />
 
 Запрос GET /tasks/{id}
+
 <img width="390" height="171" alt="image" src="https://github.com/user-attachments/assets/7f495062-5c33-4f44-8fc2-89c726697d01" />
+
+Коллекция Postman представлена в файле requests.md.
 
 # Структура проекта
 Дерево структуры проекта: 
