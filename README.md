@@ -44,11 +44,20 @@ go run ./cmd/server
 # Структура проекта
 Дерево структуры проекта: 
 ```
-D:
-├───bin
-├───cmd
-│   └───server
-└───internal
-    ├───api
-    └───storage
+pz3-http/
+├── bin/
+│   └── server.exe
+├── cmd/
+│   └── middleware/
+│       ├── cors.go
+│       └── logger.go
+├── internal/
+│   ├── api/
+│   │   ├── handlers.go
+│   │   ├── middleware.go
+│   │   └── responses.go
+│   └── storage/
+│       └── memory.go
+├── go.sum
+└── main.go
 ```
